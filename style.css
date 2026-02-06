@@ -6,7 +6,7 @@
 }
 
 body{
-  background: linear-gradient(90deg,rgb(124, 124, 124), rgba(111, 111, 111, 0.564), rgb(169, 169, 169), rgb(195, 193, 193));
+  background: linear-gradient(90deg,rgb(116, 116, 116), rgba(111, 111, 111, 0.564), rgb(169, 169, 169), rgb(125, 125, 125));
 }
 
 .nav-bar{
@@ -158,6 +158,7 @@ body{
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  animation: zoom-right-side 2s ease-in-out;
 }
 .hero-right-icon{
   font-size: large;
@@ -226,6 +227,17 @@ body{
     transform: translateX(0px);
   }
 }
+@keyframes zoom-right-side {
+  from{
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 
 @media screen and (min-width:1025px){
   .hero-profile-name{
