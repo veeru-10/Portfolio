@@ -12,6 +12,8 @@
   margin: 3% 0;
   cursor: pointer;
   transition: all 0.5s linear;
+  animation: zoom 0.5s ease-in-out;
+
 }
 .about-title:hover{
   color: black;
@@ -20,9 +22,10 @@
   font-size: 2rem;
   font-weight: 900;
   margin: 2% 0;
-  text-decoration:underline;
+  /* text-decoration:underline; */
   cursor: pointer;
   transition: all 0.5s linear;
+  animation: zoom-left-side 0.5s ease-in-out;
 }
 
 .objective-title:hover{
@@ -38,8 +41,9 @@
   color: rgb(225, 225, 225);
 }
 .about-objective-info, .skill-domain-info{
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   font-size: larger;
+  animation: fade-in 1s ease-in-out;
 }
 .skill-domain{
   /* background-color: rgb(153, 153, 153); */
@@ -51,6 +55,8 @@
   box-shadow: 1px 1px 5px rgb(68, 68, 68);
   transition: all 0.3s linear;
   cursor: pointer;
+  animation: zoom 0.5s ease-in;
+
 }
 .skill-domain:hover{
   background-color: rgb(31, 31, 31);
@@ -84,17 +90,18 @@
   border-radius: 5px;
   margin: 4% 0;
   margin-top: 2px;
-  padding: 8% 5%;
+  padding: 2% 5%;
   box-shadow: 1px 1px 5px rgb(68, 68, 68);
   cursor: pointer;
   transition: all 0.3s linear;
+  animation: zoom 0.5s ease-in;
 }
 .experience-with-training:hover{
   background-color: rgb(31, 31, 31);
 }
 
 .experience-with-training-duration, .experience-with-training-skill, .experience-with-training-skill-gain{
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   color: #fff;
   margin-bottom: 1%;
   font-size: larger;
@@ -106,6 +113,7 @@
 }
 .experience-with-training:hover .about-arrow-icon{
   color: #fff;
+  animation: zoom-left-side 0.5s ease-in;
 }
 .eduaction-graduation{
   box-shadow: 1px 1px 10px rgb(213, 212, 212);
@@ -116,6 +124,7 @@
   cursor: pointer;
   transition: all 0.4s linear;
   margin-bottom: 4%;
+  animation: zoom 0.5s ease-in;
 }
 .eduaction-graduation:hover{
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
@@ -128,23 +137,24 @@
   justify-content: space-evenly;
 }
 .graduation-icon{
-  width: 120px;
+  width: 130px;
   border-radius: 5px;
 }
 .school{
-  height: 120px;
+  height: 130px;
 }
 
 .graduation-name{
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   font-weight: 700;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 25px;
+  /* text-decoration: underline; */
   margin-bottom: 2%;
 }
 .graduation-year, .graduation-domain, .graduation-grade{
   font-weight: bold;
-  font-size: 1.2rem;
+  margin-bottom: 1%;
+  font-size: 1rem;
   color: rgb(26, 69, 18);
 }
 .color-code-2{
@@ -157,15 +167,19 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
+  animation: zoom 0.5s ease-in;
 }
-.tutorial-title, .documentation-title, .ai-tools-title, .Coding-platforms-title{
+.tutorial-title, .documentation-title, .ai-tools-title, .coding-platforms-title{
   padding: 2% 1%;
   background-color: rgb(255, 255, 255);
   font-size: larger;
   border-radius: 5px;
   color: #000000;
 }
-.documentation-title, .ai-tools-title, .Coding-platforms-title{
+.documentation-title, .ai-tools-title, .coding-platforms-title{
+  animation: zoom 0.5s ease-in;
+}
+.documentation-title, .ai-tools-title, .coding-platforms-title{
   margin: 2% 0;
   font-weight: bold;
 }
@@ -196,4 +210,116 @@
   height: 195px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/* laptops and below media query */
+@media screen and (min-width:426px) and (max-width:1024px){
+  .about-title{
+    font-size: 2rem;
+  }
+  .objective-title, .skill-title, .experience-title, .education-title, .learning-title{
+    font-size: 1.5rem;
+  }
+  .skill-domain-title, .experience-with-training-institute, .skill-domain-info, .experience-with-training-duration, .experience-with-training-skill, .experience-with-training-skill-gain{
+    font-size: medium;
+  }
+  .graduation-name{
+    font-size: 20px;
+  }
+  .graduation-year, .graduation-domain, .graduation-grade{
+    font-size: 0.8rem;
+  }
+  .tutorial-title, .coding-platforms-title, .documentation-title, .ai-tools-title{
+    font-size: large;
+  }
+  .tutorial-video{
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+  }
+  .js-simon{
+    height: 145px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .tutorial-list-name{
+    font-size: smaller;
+  }
+}
+
+/* ipad media query */
+/* (min-width: 426px) and */
+
+@media screen and (max-width:768px){
+  .about-section{
+    padding: 0 3%;
+  }
+  .about-objective-info{
+    font-size: medium;
+  }
+  .objective-title, .skill-title, .experience-title, .education-title, .learning-title{
+    font-size: 1.5rem;
+  }
+  .hero-right-icons{
+    width: 100%;
+    padding: 0;
+  }
+  .tutorial-title, .coding-platforms-title, .documentation-title, .ai-tools-title{
+    font-size: medium;
+  }
+}
+
+/* mobile media query */
+@media screen and (max-width:426px){
+  .about-title{
+    font-size: 1rem;
+  }
+  .about-objective-info{
+    font-size: small;
+  }
+  .objective-title, .skill-title, .experience-title, .education-title, .learning-title{
+    font-size: 1rem;
+  }
+  .skill-domain-title, .experience-with-training-institute, .skill-domain-info, .experience-with-training-duration, .experience-with-training-skill, .experience-with-training-skill-gain{
+    font-size: xx-small;
+  }
+  .graduation-icon{
+    width: 80px;
+    border-radius: 5px;
+  }
+  .school{
+    height: 80px;
+  }
+  .graduation-name{
+    font-size: 10px;
+  }
+  .graduation-year, .graduation-domain, .graduation-grade{
+    font-size: 0.5rem;
+  }
+  .tutorial-video{
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+  }
+  .js-simon{
+    height: 95px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .tutorial-list-name{
+    font-size: xx-small;
+  }
+  .tutorial-title, .coding-platforms-title, .documentation-title, .ai-tools-title{
+    font-size: xx-small;
+    margin: 3% 0;
+  }
 }
