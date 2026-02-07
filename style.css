@@ -163,6 +163,9 @@ body{
   flex-direction: column;
   animation: zoom-right-side 1.5s ease-in-out;
 }
+/* .hero-right-icons a{
+  text-decoration: none;
+} */
 .hero-right-icon{
   font-size: large;
   text-align: center;
@@ -357,9 +360,10 @@ body{
     font-size: medium;
   }
   .hero-profile-button{
-    padding: 15px 20px;
+    padding: 12px 17px;
+    margin-bottom: 2%;
     margin-top: 0;
-    font-size: small;
+    font-size: xx-small;
   }
   .more-list-info{
     right: 15%;
@@ -441,6 +445,7 @@ body{
   .hero-profile-button{
     padding: 6px 7px;
     margin-top: 0;
+    margin-bottom: 2%;
     font-size: 5px;
   }
   .more-list-info{
