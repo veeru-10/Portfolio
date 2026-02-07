@@ -8,7 +8,6 @@
 body{
   background: linear-gradient(90deg,rgb(116, 116, 116), rgba(111, 111, 111, 0.564), rgb(169, 169, 169), rgb(125, 125, 125));
 }
-
 .nav-bar{
   height: 10vh;
   display: flex;
@@ -178,7 +177,7 @@ body{
   position: fixed;
   border-radius: 10px;
   right: 6%;
-  top: 50%;
+  top: 41%;
   font-size: 1em;
   display: none;
   flex-direction: column;
@@ -212,7 +211,7 @@ body{
 @keyframes zoom {
   from{
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
   }
   to{
     opacity: 1;
@@ -223,7 +222,7 @@ body{
 @keyframes zoom-left-side {
   from{
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-50px);
   }
   to{
     opacity: 1;
@@ -233,7 +232,7 @@ body{
 @keyframes zoom-right-side {
   from{
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(50px);
   }
   to{
     opacity: 1;

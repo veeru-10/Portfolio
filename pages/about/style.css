@@ -163,9 +163,10 @@
 }
 .tutorial{
   background-color: rgb(32, 86, 47);
-  padding-top: 10px;
+  /* padding-top: 10px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px; */
+  padding: 2% 2% 1px 2%;
   border-radius: 5px;
   animation: zoom 0.5s ease-in;
 }
