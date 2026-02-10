@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 2% 0;
+  margin: 5% 0;
   padding: 2% 3%;
   border-radius: 10px;
   animation: zoom-left-side 1s linear;
@@ -19,16 +19,44 @@ input, textarea{
   font-size: large;
   border: none;
   border-radius: 10px;
-  margin: 2%;
+  margin: 4%;
 }
 .message{
   min-height: 200px;
   grid-area: 3/1/span 4/ span 2;
   padding: 2%;
-  margin: 1%;
+  margin: 2%;
 }
 .contact-profile-button{
-  text-align: center;
+  font-size: larger;
+  margin-bottom: 2%;
+}
+.my-contact-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 2% 0;
+}
+.my-contact-info-continer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.my-contact-title{
+  font-size: xx-large;
+  font-weight: bold;
+}
+.contact-icon{
+  color: #095323;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.contact-link{
+  text-decoration: none;
+  color: #fff;
+  font-size: larger;
 }
 
 @media screen and (min-width:426px) and (max-width:1024px){
@@ -39,35 +67,101 @@ input, textarea{
   .message{
     min-height: 150px;
   }
+  .contact-icon{
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .contact-link{
+    font-size: medium;
+  }
+
+  .contact-profile-button{
+    font-size: small;
+    font-size: 12px;
+    margin: 2%;
+  }
+  .my-contact-title{
+    margin: 4% 0;
+  }
+
 }
 @media screen and (max-width:768px){
-  input, textarea{
-    font-size: smaller;
+  .glass-effect{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 2% 0;
     padding: 2%;
   }
-  .message{
-    min-height: 100px;
+  input, textarea{
+    font-size: xx-small;
+    padding: 2%;
+    margin: 2%;
   }
+  .message{
+    min-height: 80px;
+  }
+  .my-contact-title{
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-weight: bold;
+  }
+  .my-contact-info{
+    margin: 4% 0;
+  }
+  .contact-icon{
+    font-size: 21px;
+    margin-right: 10px;
+  }
+  .contact-link{
+    font-size: small;
+  }
+  .contact-profile-button{
+    font-size: xx-small;
+  }
+  
 }
 
 
 /* mobile media query */
 @media screen and (max-width:426px){
-  .glass-effect{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 2%;
-    padding: 5%;
+  .contact-section{
+    height: 80vh;
   }
+  
   input, textarea{
-    font-size: 5px;
-    padding: 10px;
+    font-size: 8px;
+    padding: 8px;
     border-radius: 5px;
   }
   .message{
     min-height: 50px;
     margin: 2%;
     padding: 10px;
+  }
+  .my-contact-info{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: start;
+  }
+  .my-contact-info-continer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2%;
+  }
+  .contact-icon{
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .contact-link{
+    font-size: x-small;
+  }
+  .my-contact-title{
+    font-size: 14px;
+  }
+  .contact-profile-button{
+    font-size: 8px;
+    margin: 4% 0;
   }
 }
